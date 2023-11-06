@@ -1,0 +1,44 @@
+/* Center the navigation */
+header ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style the navigation links */
+  header li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  
+  /* Apply a black background */
+  body {
+    background-color: #000;
+    color: #fff; /* Change text color to white for better readability */
+  }
+  
+  /* Style the Feedback section */
+  footer {
+    text-align: center;
+  }
+  
+  /* Add styles to the button-link class for Feedback */
+  .button-link {
+    text-decoration: none;
+    background-color: #0078d4; /* Change the button background color */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .button-link:hover {
+    background-color: #005f9e; /* Change button background color on hover */
+  }
+  
+  /* Integrate a GIF in the Feedback section */
+  .feedback-gif {
+    max-width: 100px;
+    height: auto;
+  }
+  
