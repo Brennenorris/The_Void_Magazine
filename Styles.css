@@ -41,4 +41,50 @@ header ul {
     max-width: 100px;
     height: auto;
   }
-  
+ /* Style for team members */
+.team-member {
+  display: flex; /* Set the display property to flex to align horizontally */
+  align-items: center; /* Vertically align the content */
+  margin: 20px;
+  color: #fff;
+}
+
+.team-member img {
+  width: 150px; /* Set the desired image width */
+  height: auto;
+  border-radius: 50%; /* Creates a circular image, adjust as needed */
+}
+
+/* Additional styling as needed */
+.feedback {
+  max-width: 150px;
+  text-align: left; /* Align the text to the left */
+  margin: 0; /* Remove the margin or set it to 0 */
+}
+/* Style the text boxes */
+.text-box {
+  background: #000; /* Background color same as the website */
+  padding: 10px;
+  margin: 10px;
+}
+
+.text-box input {
+  border: none;
+  border-bottom: 2px solid #fff; /* White underline */
+  background: transparent;
+  color: #fff; /* Text color */
+  width: 100%; /* Full width input field */
+  padding: 5px;
+  margin: 5px 0;
+}
+
+/* Style text areas (if needed) */
+.text-box textarea {
+  border: none;
+  border-bottom: 2px solid #fff; /* White underline */
+  background: transparent;
+  color: #fff; /* Text color */
+  width: 100%; /* Full width textarea */
+  padding: 5px;
+  margin: 5px 0;
+}
