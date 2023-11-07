@@ -9,8 +9,7 @@ header ul {
     list-style: none;
     margin: 0 10px;
   }
-  
-  /* Apply a black background */
+
   body {
     background-color: #000;
     color: #fff; /* Change text color to white for better readability */
@@ -87,4 +86,45 @@ header ul {
   width: 100%; /* Full width textarea */
   padding: 5px;
   margin: 5px 0;
+}
+
+.subtitleRight {
+  font-size: 24px;
+  font-family: 'Times New Roman';
+  margin-left: 65%;
+  margin-bottom: 5%; 
+  font-weight: bold;
+}
+
+
+.subtitleLeft {
+  font-size: 24px;
+  font-family: 'Times New Roman';
+  margin-left: 10%;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+
+.subtitleCenter{
+  font-size: 24px;
+  font-family: 'Times New Roman';
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+
+.paragraph {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: cursive;
+  font-size: 19 px;
+  margin-bottom: 5%;
+}
+
+
+.imgRight {
+  max-width: 600px;
+  margin-left: 50%;
+  
 }
