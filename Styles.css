@@ -1,14 +1,51 @@
-/* Center the navigation */
-header ul {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Style the navigation links */
-  header li {
-    list-style: none;
-    margin: 0 10px;
-  }
+/* Style the navigation bar with a white border at the bottom */
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  border-bottom: 2px solid white; /* Add a white border at the bottom */
+}
+
+/* Style the navigation links to be horizontal */
+nav ul {
+  display: flex; /* Make the list items horizontal */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+nav li {
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+/* Style the navigation link anchors */
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Center the JPEG image */
+img.jpeg {
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center horizontally within the navigation */
+}
+
+/* Style the white underline */
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+/* Hover effect for the underline */
+nav a:hover::after {
+  width: 100%;
+}
 
   body {
     background-color: #000;
@@ -35,11 +72,6 @@ header ul {
     background-color: #005f9e; /* Change button background color on hover */
   }
   
-  /* Integrate a GIF in the Feedback section */
-  .feedback-gif {
-    max-width: 100px;
-    height: auto;
-  }
  /* Style for team members */
 .team-member {
   display: flex; /* Set the display property to flex to align horizontally */
@@ -51,7 +83,6 @@ header ul {
 .team-member img {
   width: 150px; /* Set the desired image width */
   height: auto;
-  border-radius: 50%; /* Creates a circular image, adjust as needed */
 }
 
 /* Additional styling as needed */
@@ -89,16 +120,15 @@ header ul {
 }
 
 .subtitleRight {
-  font-size: 24px;
+  font-size: 30px;
   font-family: 'Times New Roman';
-  margin-left: 65%;
+  margin-left: 50%;
   margin-bottom: 5%; 
   font-weight: bold;
 }
 
-
 .subtitleLeft {
-  font-size: 24px;
+  font-size: 30px;
   font-family: 'Times New Roman';
   margin-left: 10%;
   margin-bottom: 5%;
@@ -110,9 +140,8 @@ header ul {
   font-family: 'Times New Roman';
   text-align: center;
   font-weight: bold;
-  
+ 
 }
-
 
 .paragraph {
   margin-left: 5%;
@@ -122,9 +151,28 @@ header ul {
   margin-bottom: 5%;
 }
 
-
 .imgRight {
   max-width: 600px;
   margin-left: 50%;
-  
+
 }
+
+.jpeg {
+  max-width: 80%;
+  max-height: 60px;
+}
+
+.right-align {
+  float: right;
+}
+/*
+.submitButton{
+  text-decoration: none;
+  background-color: #0078d4; 
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+/*

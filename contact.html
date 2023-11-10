@@ -8,29 +8,30 @@
     <title>temp</title>
 </head>
 <header>
-    <n>
+    <img class="jpeg" src="Images/72cff9_b82c9594a0614ac8bb3bc162fb4ef28f~mv2.jpeg.webp" alt="Feedback JPEG">
+    <nav>
         <ul>
             <li><a rel="Home" href="hollow.html">Home</a></li>
-            <li><a rel="prints" href="prints.html">About</a></li>
-            <img class="feedback-gif" src="Images/72cff9_6f045bea2d6940af82b73cfe5662c0de~mv2.gif" alt="Feedback GIF">
-            <li><a rel="about" href="about.html">Services</a></li>
+            <li><a rel="Prints" href="prints.html">prints</a></li>
+            <li><a rel="about" href="about.html">About</a></li>
             <li><a rel="contact" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <div class="text-box">
-    <form id="feedbackForm" action="process-feedback.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required><br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required><br>
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" required></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+        <form id="feedbackForm" action="process-feedback.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea><br>
+            <input type="submit" value="Submit" class="submitButton"> <!-- Add class attribute -->
+        </form>
     </div>
 </main>
+
 <footer>
     <p>&copy; The Void, voidemail <a href="feedback.html" class="button-link">Feedback</a> </p> 
     <!--add void email -->
