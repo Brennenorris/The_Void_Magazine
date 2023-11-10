@@ -175,4 +175,14 @@ nav a:hover::after {
   display: inline-block;
   transition: background-color 0.3s;
 }
-/*
+*/
+
+.HollowTitle{
+text-align: center;
+font-family: cursive;
+font-size: 45px;
+}
+
+.iframe{
+  display: flex;
+}
