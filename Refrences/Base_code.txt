@@ -25,3 +25,34 @@
     <!--add void email -->
 </footer>
 </html>
+
+//
+HTML Listener script
+//
+
+<script>
+  document.getElementById('tracked-link').addEventListener('click', function() {
+    trackClick('tracked-link');
+  });
+
+  document.getElementById('tracked-image').addEventListener('click', function() {
+    trackClick('tracked-image');
+  });
+
+  function trackClick(elementId) {
+    // Increment click count
+    var element = document.getElementById(elementId);
+    var clickCount = parseInt(element.getAttribute('data-clicks'));
+    clickCount++;
+    element.setAttribute('data-clicks', clickCount);
+
+    // Send data to the server (AJAX request)
+    // You may want to use a library like jQuery or fetch for this.
+    // This is a simplified example.
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/track-click', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({ elementId: elementId, clickCount: clickCount }));
+  }
+</script>
+
