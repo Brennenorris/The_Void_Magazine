@@ -21,3 +21,12 @@ console.log('uinteraction_type')
 console.log('interaction_timestamp')
 // Close the database connection
 connection.end();
+
+/* CREATE TABLE interactions (
+  interaction_id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  interaction_type VARCHAR(255),
+  interaction_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+*/
