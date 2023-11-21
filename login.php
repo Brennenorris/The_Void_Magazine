@@ -28,11 +28,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->fetch();
     $stmt->close();
 
-    // Verify the entered password against the hashed password in the database
+// Verify the entered password against the hashed password in the database
     if ($db_username && password_verify($entered_password, $db_password)) {
-        // Login successful, redirect to a secure page or perform other actions
+        // Generate a unique ID for the user (you can customize this logic)
+        $uniqueID = uniqid();
+
+        // Store the unique ID in a cookie
+        setcookie('userToken', $uniqueID, time() + (86400 * 30), '/'); // Set expiration time (30 days)
+
+        // Store user details in the session
+        $_SESSION['user_id'] = $user_id;
         $_SESSION['username'] = $db_username;
-        header('Location: dashboard.php');
+
+        // Redirect to repository.html
+        header('Location: repository.html');
         exit;
     } else {
         // Login failed, redirect back to the login page with an error message

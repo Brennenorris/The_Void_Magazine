@@ -8,12 +8,13 @@
     <title>temp</title>
 </head>
 <header>
-    <n>
+    <img class="jpeg" src="Images/72cff9_b82c9594a0614ac8bb3bc162fb4ef28f~mv2.jpeg.webp" alt="Feedback JPEG">
+    <nav>
         <ul>
             <li><a rel="Home" href="hollow.html">Home</a></li>
-            <li><a rel="prints" href="prints.html">About</a></li>
-            <li><a rel="about" href="about.html">Services</a></li>
-            <li><a rel="contact" href="contact.html">Contact</a></li>av
+            <li><a rel="Prints" href="prints.html">prints</a></li>
+            <li><a rel="about" href="about.html">About</a></li>
+            <li><a rel="contact" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>

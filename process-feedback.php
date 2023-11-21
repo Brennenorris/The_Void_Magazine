@@ -22,11 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO feedback (name, email, message) VALUES ('$name', '$email', '$message')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Feedback submitted successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+       
+        header("Location: hollow.html");
+        exit();
+    } 
+    else {
+        $error_message = "Error: " . $sql . "\n" . $conn->error;
+        error_log($error_message, 3, "error_log.txt");  // 3 means append to file
+        echo "An error occurred. Please try again later.";  // Display a generic message to the user.
     }
-
     // Close the database connection
     $conn->close();
 

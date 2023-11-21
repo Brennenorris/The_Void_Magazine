@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<header>
+    <img class="jpeg" src="Images/72cff9_b82c9594a0614ac8bb3bc162fb4ef28f~mv2.jpeg.webp" alt="Feedback JPEG">
+    <nav>
+        <ul>
+            <li><a rel="Home" href="hollow.html">Home</a></li>
+            <li><a rel="Prints" href="prints.html">prints</a></li>
+            <li><a rel="about" href="about.html">About</a></li>
+            <li><a rel="contact" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+<h1>Feedback </h1>
+<!--add local file path instead-->
+<form action="process-feedback.php" method="post" class="text-box">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <button type="submit">Submit Feedback</button>
+</form>
+
+</body>
+</html>
