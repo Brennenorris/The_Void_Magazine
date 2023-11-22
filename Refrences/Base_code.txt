@@ -22,8 +22,9 @@
 </main>
 
 <footer>
-    <p>&copy; The Void, voidemail <a href="feedback.html" class="button-link">Feedback</a> </p> 
-    <!--add void email -->
+    <img src="Images/72cff9_6f045bea2d6940af82b73cfe5662c0de~mv2.gif" alt="Void Gif" class="jpeg">
+    <p>&copy; The Void, thevoidcsu@outlook.com <a href="feedback.html" class="button-link">Feedback</a>
+    <a href="login.html" class="button-link">Member Login</a> </p>
 </footer>
 </html>
 

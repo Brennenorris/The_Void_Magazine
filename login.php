@@ -52,4 +52,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // Close the database connection
 $conn->close();
+
+
+/*CREATE TABLE photos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    file_name VARCHAR(255) NOT NULL,
+    file_path VARCHAR(255) NOT NULL,
+    upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+*/
 ?>
+

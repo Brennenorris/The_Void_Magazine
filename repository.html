@@ -5,36 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Temp" content="Temp">
     <link rel="stylesheet" href="Styles.css">
-    <title>temp</title>
+    <title>repository</title>
 </head>
+<header>
+    <nav>
+    <img class="jpeg" src="Images/72cff9_b82c9594a0614ac8bb3bc162fb4ef28f~mv2.jpeg.webp" alt="Feedback JPEG">
+    </nav>
+</header>
 <main>
+    <form action="upload.php" method="post" enctype="multipart/form-data" class="text-box">
+        <label for="file">Select a photo to upload:</label>
+        <input type="file" name="file" id="file" accept="image/*" required>
+        <br>
+        <input type="submit" value="Upload Photo">
+    </form>
 
+    <script>
+        // Function to check if the client-side unique ID exists
+        function checkUniqueID() {
+            // Retrieve the value of the 'uniqueID' cookie
+            var uniqueID = getCookie('uniqieID');
 
-
-
-
-</main>
+            // Check if the uniqueID exists
+            if (uniqueID) {
+                // Perform actions for an authenticated user
+                console.log('User is authenticated with unique ID: ' + uniqueID);
+                // You can redirect, show content, or perform other actions here
+            } else {
+                // Perform actions for a non-authenticated user
+                console.log('User is not authenticated');
+                // You can redirect, show a login form, or perform other actions here
+            }
+        }
+        // Function to get the value of a cookie by name
+        function getCookie(storedToken) {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.startsWith(name + '=')) {
+                    return cookie.substring(name.length + 1);
+                }
+            }
+            return null;
+        }
+        // Call the function when the page loads
+        window.onload = checkUniqueID;
+    </script>
+     <footer>
+        <img src="Images/72cff9_6f045bea2d6940af82b73cfe5662c0de~mv2.gif" alt="Void Gif" class="jpeg">
+        <p>&copy; The Void, thevoidcsu@outlook.com <a href="feedback.html" class="button-link">Feedback</a>
+        <a href="login.html" class="button-link">Member Login</a> </p>
+    </footer>
 </html>
-
- <!-- Authentication check -->
- <?php
- // Placeholder for server-side authentication logic
- // Check if the user is authenticated, otherwise redirect to login page
- if (!isset($_SESSION['authenticated_user'])) {
-     header('Location: login.php');
-     exit;
- }
- ?>
-
- <!-- Authorization check -->
- <?php
- // Placeholder for server-side authorization logic
- // Check if the authenticated user has the necessary permissions
- // If not, display an error message or redirect to an unauthorized page
- ?>
-
- <!-- Picture repository content -->
- <div>
-     <!-- Display pictures or provide links to the pictures here -->
-     <!-- You may use a server-side script to fetch and display images based on user permissions -->
- </div>

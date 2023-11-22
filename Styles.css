@@ -1,24 +1,24 @@
-/* Style the navigation bar with a white border at the bottom */
+
 nav {
   padding: 20px;
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-  border-bottom: 2px solid white; /* Add a white border at the bottom */
+  justify-content: center; 
+  align-items: center; 
+  border-bottom: 2px solid white; 
 }
 
-/* Style the navigation links to be horizontal */
+
 nav ul {
-  display: flex; /* Make the list items horizontal */
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove padding */
+  display: flex; 
+  list-style: none; 
+  padding: 0; 
 }
 
 nav li {
-  margin-right: 20px; /* Add spacing between list items */
+  margin-right: 20px; 
 }
 
-/* Style the navigation link anchors */
+
 nav a {
   color: white;
   font-weight: bold;
@@ -28,8 +28,8 @@ nav a {
 
 /* Center the JPEG image */
 img.jpeg {
-  display: block; /* Make the image a block element */
-  margin: 0 auto; /* Center horizontally within the navigation */
+  display: block; 
+  margin: 0 auto;
 }
 
 /* Style the white underline */
@@ -42,17 +42,11 @@ nav a::after {
   transition: width 0.3s;
 }
 
-/* Hover effect for the underline */
-nav a:hover::after {
-  width: 100%;
-}
-
   body {
     background-color: #000;
-    color: #fff; /* Change text color to white for better readability */
+    color: #fff; 
   }
-  
-  /* Style the Feedback section */
+
   footer {
     text-align: center;
   }
@@ -60,7 +54,7 @@ nav a:hover::after {
   /* Add styles to the button-link class for Feedback */
   .button-link {
     text-decoration: none;
-    background-color: #0078d4; /* Change the button background color */
+    background-color: #4b5358; 
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -72,24 +66,26 @@ nav a:hover::after {
     background-color: #005f9e; /* Change button background color on hover */
   }
   
- /* Style for team members */
+ /* Style for team members
+ ask what they think
+ */
 .team-member {
-  display: flex; /* Set the display property to flex to align horizontally */
-  align-items: center; /* Vertically align the content */
+  display: flex; 
+  align-items: center; 
   margin: 20px;
   color: #fff;
 }
 
 .team-member img {
-  width: 150px; /* Set the desired image width */
+  width: 150px; 
   height: auto;
 }
 
-/* Additional styling as needed */
+
 .feedback {
   max-width: 150px;
-  text-align: left; /* Align the text to the left */
-  margin: 0; /* Remove the margin or set it to 0 */
+  text-align: left; 
+  margin: 0; /
 }
 /* Style the text boxes */
 .text-box {
@@ -102,19 +98,19 @@ nav a:hover::after {
   border: none;
   border-bottom: 2px solid #fff; /* White underline */
   background: transparent;
-  color: #fff; /* Text color */
-  width: 100%; /* Full width input field */
+  color: #fff; 
+  width: 100%; 
   padding: 5px;
   margin: 5px 0;
 }
 
-/* Style text areas (if needed) */
+
 .text-box textarea {
   border: none;
-  border-bottom: 2px solid #fff; /* White underline */
+  border-bottom: 2px solid #fff; 
   background: transparent;
-  color: #fff; /* Text color */
-  width: 100%; /* Full width textarea */
+  color: #fff; 
+  width: 80%; 
   padding: 5px;
   margin: 5px 0;
 }
